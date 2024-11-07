@@ -89,10 +89,8 @@ class RadiusConfigurationSection extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        RoundedContainer(), // Синій контейнер
-        SizedBox(height: 20), // Відступ
-
-        // Сітка 2x2 для слайдерів
+        RoundedContainer(), 
+        SizedBox(height: 20),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20.0),
           child: Column(
@@ -154,7 +152,7 @@ class RadiusSlider extends StatelessWidget {
         return Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text('$label: ${value.toStringAsFixed(2)}', // Показник значення
+            Text('$label: ${value.toStringAsFixed(2)}',
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
             Slider(
               min: 0,
